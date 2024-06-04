@@ -127,24 +127,39 @@ nav {
   position: fixed;
   z-index: 2000;
   top: 0;
-  right: 0;
-  background-color: #fdcc04;
+  left: 0;
+  background-color: #1e1e1d;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  }
+
+  #cpyryt {
+    margin-top: auto;
+    padding: 20px;
+    font-size: 14px;
+    color: #f1f1f1;
+    text-align: center;
+  }
+
+  .side-menu .logo {
+    width: 50px; /* Adjust the width as needed */
+    margin: 0 20px 20px 20px; /* Adjust the margins as needed */
   }
 
   .side-menu a {
     padding: 15px 15px;
     text-decoration: none;
     font-size: 30px;
-    color: #111;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
   }
 
   .side-menu a:hover {
-    color: #f1f1f1;
+    color: #31d2bf;
   }
 
   .side-menu .closebtn {

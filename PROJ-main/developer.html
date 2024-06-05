@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meet the Team!</title>
+    <link rel="stylesheet" href="devpage.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+</head>
+<body>
+    <nav id="navbar">
+        <div class="head">
+            <a href="LANDING.HTML">
+                <img src="IMAGES/809052 1.png" alt="Logo">
+            </a>
+        </div>
+        <div class="drpdwn" style="margin-left: auto;">
+            <img src="IMAGES/dropdown.png" alt="MORE" id="dropdown-toggle" style="cursor: pointer;">
+        </div>
+    </nav>
+    <div id="mySidenav" class="side-menu">
+        <img src="IMAGES/809052 1.png" alt="Logo" class="logo">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="LANDING.HTML">Home</a>
+        <a href="#test">Take the Test</a>
+        <a href="#programs">Programs</a>
+        <a href="#acadorgs">Academic Organizations</a>
+        <a href="DEVELOPERS.HTML">Meet the Team</a>
+
+        <p id="cpyryt"><span>&copy</span>FEU Mathematics Society 2024</p>
+    </div>
+    <div class = "pro-cont">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Proponents</h1>
+        <section class = "img-cont">
+            <div class="IMAGES">
+                <div class="image">
+                <img id="img1" src="team/PROPONENT.png" class="d-block w-100" alt="Image 1">
+                    <img id="img2" src="team/PROPONENT_2.png" class="d-block w-100" alt="Image 2">
+                    <img id="img3" src="team/PROPONENT_3.png" class="d-block w-100" alt="Image 3">
+                </div>
+                <div class="image-nav">
+                    <a href="#img1"></a>
+                    <a href="#img2"></a>
+                    <a href="#img3"></a>
+                </div>
+            </div>
+  <br><br><br><br>
+</section>
+</div>
+<div class = "dev-cont">
+        <h1>Developers</h1>
+        <section class = "img-cont">
+            <div class="IMAGES">
+                <div class="image">
+                <img id="img1" src="team/DEVELOPER.png" class="d-block w-100" alt="Image 1">
+                    <img id="img2" src="team/DEVELOPERS_2.png" class="d-block w-100" alt="Image 2">
+                    <img id="img3" src="team/DEVELOPERS_3.png" class="d-block w-100" alt="Image 3">
+                    <img id="img4" src="team/DEVELOPERS_4.png" class="d-block w-100" alt="Image 4">
+                    <img id="img5" src="team/DEVELOPERS_5.png" class="d-block w-100" alt="Image 5">
+                </div>
+                <div class="image-nav">
+                    <a href="#img1"></a>
+                    <a href="#img2"></a>
+                    <a href="#img3"></a>
+                    <a href="#img4"></a>
+                    <a href="#img5"></a>
+                </div>
+            </div>
+  <br><br><br><br>
+</section>
+</div>
+
+<div class="math">
+            <p><center><b>This project is a collaboration with the Institute of Arts and Sciences Student Council and FEU Mathematics Society A.Y. 2024- 2025.</center><b></p>
+        </div>
+
+    <script>
+        document.getElementById('dropdown-toggle').addEventListener('click', function() {
+            var sideMenu = document.getElementById('mySidenav');
+            if (sideMenu.style.width === "250px") {
+                sideMenu.style.width = "0";
+            } else {
+                sideMenu.style.width = "250px";
+            }
+        });
+
+        function closeNav() {
+            document.getElementById('mySidenav').style.width = "0";
+        }
+    </script>
+
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+  
+    window.addEventListener('scroll', function() {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (currentScroll > lastScrollTop) {
+        navbar.style.top = '-100px';
+      } else {
+        navbar.style.top = '0'; 
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, false);
+  </script>
+  
+
+</body>
+</html>
